@@ -109,7 +109,7 @@ public class SudokuMaker {
        
         
     }
-    
+//     takes a grid and number of required vacancy and creates puzzle
     public  int [][] disappear(int x[][],int limit){
         int temp1,a,b,temp;
         ArrayList<Integer> seen = new ArrayList<>();
@@ -119,8 +119,6 @@ public class SudokuMaker {
             }
             
         }
-       // HashSet<Integer> seen= new HashSet<>();
-        
         ArrayList<Integer> vacancy = new ArrayList<>();
         while(vacancy.size()<limit){
             
@@ -141,6 +139,7 @@ public class SudokuMaker {
                 vacancy.remove(new Integer(temp));
             }
             else{
+// remove diagnolly opposite number to create symmetric puzzle
                 temp=(8-a)*10+(8-b);
                 seen.remove(new Integer(temp));
                 a=8-a;
