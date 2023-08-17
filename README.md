@@ -1,5 +1,5 @@
 # Sudoku
-Sudoku game that generates sudoku board having unique solution using the concept of backtracking . It saves highscores of users in a mySql database.
+Sudoku game (Java Applet) that generates sudoku board having unique solution using the concept of backtracking . It saves highscores of users in a mySql database.
 
 # ScreenShots
 
